@@ -11,5 +11,10 @@ pipeline {
                 git 'https://github.com/rkmr039/SpringBoot.git'
             }
         }
+        stages("Maven Build") {
+            steps {
+                mvn clean package
+            }
+        }
     }
 }
