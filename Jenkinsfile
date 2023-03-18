@@ -1,6 +1,10 @@
 node {
+  agent any
+  tools{
+    maven 'Maven'
+  }
   stage("Clone the project") {
-    git branch: 'main', url: 'https://github.com/nkchauhan003/jenkins-demo.git'
+    git branch: 'main', url: 'https://github.com/rkmr039/SpringBoot.git'
   }
 
   stage("Compilation") {
