@@ -5,8 +5,8 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
 
 	<name>HelloWorld</name>
 	<description>Demo project for Spring Boot</description>
@@ -51,8 +51,8 @@
 		<plugins>
 			<plugin>
 			    <groupId>org.apache.maven.plugins</groupId>
-			    <artifactId>maven-war-plugin</artifactId>
-			    <version>3.3.1</version>
+			    <artifactId>maven-jar-plugin</artifactId>
+			    <version>3.3.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
