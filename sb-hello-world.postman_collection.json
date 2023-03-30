@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "e99dddd5-8dde-4f2b-baf0-f602053f63de",
+		"name": "sb-hello-world",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status code is 200', () => {pm.expect(pm.response.code).to.eql(200);});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/Hello"
+			},
+			"response": []
+		}
+	]
+}
